@@ -6,13 +6,9 @@ bio: 'Node.js archmage, borderline insane but still packing a punch.'
 # Content
 excerpt_link: Read More
 
-# LESS include paths
-less:
-  paths:
-    - source/css/bundle.less
-
 # Scripts to include
 scripts:
   - jquery/dist/jquery.min.js
+  - enquire.js/dist/enquire.min.js
   - headroom.js/dist/headroom.min.js
   - headroom.js/dist/jQuery.headroom.min.js
