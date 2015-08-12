@@ -1,0 +1,15 @@
+<%- partial('navbar') %>
+
+<header class="site-head"
+  <% if (theme.cover) { %>
+    style="background-image: linear-gradient(130deg, #AEA5FC 10%, #FF9899 90%)"
+  <% } %>
+>
+    <div class="vertical">
+        <div class="site-head-content inner">
+            <% if (false && theme.logo) { %> <a class="blog-logo" href="<%- config.root %>"><img src="<%- theme.logo %>" alt="Blog Logo"/></a> <% } %>
+            <h1 class="blog-title"><%- config.title %></h1>
+            <h2 class="blog-description"><%- config.subtitle %></h2>
+        </div>
+    </div>
+</header>

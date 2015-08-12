@@ -1,0 +1,19 @@
+{
+  "name": "hexo-theme-inari",
+  "version": "0.1.0",
+  "description": "Hexo theme for my blog.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jluchiji/hexo-theme-inari.git"
+  },
+  "author": "Denis Luchkin-Zhou <wyvernzora@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jluchiji/hexo-theme-inari/issues"
+  },
+  "homepage": "https://github.com/jluchiji/hexo-theme-inari"
+}
