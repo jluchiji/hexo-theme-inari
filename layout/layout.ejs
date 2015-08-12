@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html>
-<%- partial('casper/head') %>
+<%- partial('parts/head') %>
+
 <% if (typeof page.title == 'undefined') { %>
-<body class="home-template">
+  <body class="home-template">
 <% } else { %>
-<body class="post-template">
+  <body class="post-template">
 <% } %>
-  <%- partial('casper/navbar') %>
-  <%- partial('casper/header') %>
-  <%- body %>
-  <%- partial('casper/footer') %>
-  <%- partial('casper/after_all') %>
+
+<%- partial('parts/navbar') %>
+<%- partial('parts/header') %>
+<%- body %>
+<%- partial('parts/footer') %>
+<%- partial('parts/after_all') %>
 </body>
 </html>
