@@ -4,7 +4,8 @@
   "description": "Hexo theme for my blog.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "./node_modules/.bin/gulp"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,22 @@
   "bugs": {
     "url": "https://github.com/jluchiji/hexo-theme-inari/issues"
   },
-  "homepage": "https://github.com/jluchiji/hexo-theme-inari"
+  "homepage": "https://github.com/jluchiji/hexo-theme-inari",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-add-src": "^0.2.0",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-babel": "^5.2.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-less": "^3.0.3",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-uglify": "^1.2.0",
+    "yamljs": "^0.2.3"
+  },
+  "dependencies": {
+    "headroom.js": "^0.7.1",
+    "hexo-renderer-less": "^0.1.3",
+    "jquery": "^2.1.4"
+  }
 }
