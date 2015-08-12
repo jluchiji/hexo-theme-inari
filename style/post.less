@@ -1,0 +1,566 @@
+/**
+ * Post styles.
+ */
+
+/* Every post, on every page, gets this style on its <article> tag */
+.post {
+   position: relative;
+   width:80%;
+   max-width: 700px;
+   margin: 4rem auto;
+   padding-bottom: 4rem;
+   border-bottom: #EBF2F6 1px solid;
+   word-break: break-word;
+   hyphens: auto;
+}
+
+/* Add a little circle in the middle of the border-bottom on our .post
+  just for the lolz and stylepoints. */
+.post:after {
+   display: block;
+   content: "";
+   width: 7px;
+   height: 7px;
+   border: #E7EEF2 1px solid;
+   position: absolute;
+   bottom: -5px;
+   left: 50%;
+   margin-left: -5px;
+   background: #fff;
+   -webkit-border-radius: 100%;
+   -moz-border-radius: 100%;
+   border-radius: 100%;
+   box-shadow: #fff 0 0 0 5px;
+}
+
+.post-title {
+   margin:0;
+}
+
+.post-title a {
+   text-decoration: none;
+}
+
+.post-excerpt p {
+   margin: 1.6rem 0 0 0;
+   font-size: 0.9em;
+   line-height: 1.6em;
+   text-align: justify;
+   text-align-last: left;
+}
+
+.post-meta {
+   display: inline-block;
+   margin: 0 0 5px 0;
+   font-family: 'Lato', sans-serif;
+   font-size: 1.5rem;
+   color: #9EABB3;
+}
+
+.post-meta a {
+   color: #9EABB3;
+   text-decoration: none;
+}
+
+.post-meta a:hover {
+   text-decoration: underline;
+}
+
+.user-meta {
+   position: relative;
+   padding: 0.3rem 40px 0 100px;
+   min-height: 77px;
+}
+
+.user-image {
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+
+.user-name {
+   display: block;
+   font-weight: bold;
+}
+
+.user-bio {
+   display: block;
+   max-width: 440px;
+   font-size: 1.4rem;
+   line-height: 1.5em;
+}
+
+.publish-meta {
+   position: absolute;
+   top: 0;
+   right: 0;
+   padding: 4.3rem 0 4rem 0;
+   text-align: right;
+}
+
+.publish-heading {
+   display: block;
+   font-weight: bold;
+}
+
+.publish-date {
+   display: block;
+   font-size: 1.4rem;
+   line-height: 1.5em;
+}
+
+.comments-area {
+   width: 80%;
+   max-width: 700px;
+   margin: 4rem auto;
+}
+
+#comment h1 a {
+   text-decoration: none;
+}
+
+/* Insert some mad padding up in the header for better spacing */
+.post-template .post-header {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.post-template .site-head {
+    color: #303538;
+    border-bottom: #ebf2f6 1px solid;
+    background: none !important;
+}
+
+.post-template .site-head:after {
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    display: block;
+    width: 7px;
+    height: 7px;
+    margin-left: -5px;
+    content: '';
+    border: #e7eef2 1px solid;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    background: #fff;
+    box-shadow: #fff 0 0 0 5px;
+}
+
+/* Keep large images within the bounds of the post-width */
+.post-content img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    height: auto;
+}
+
+/* Justify post content */
+.post-content p {
+  text-align: justify;
+  text-align-last: left;
+}
+
+/* The author credit area after the post */
+.post-footer {
+    position: relative;
+    margin: 4rem 0 0 0;
+    padding: 4rem 0 0 0;
+    border-top: #EBF2F6 1px solid;
+}
+
+.post-footer h4 {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.post-footer p {
+    margin: 1rem 0;
+    font-size: 1.4rem;
+    line-height: 1.6em;
+}
+
+/* Create some space to the right for the share links */
+.post-footer .author {
+    margin-right: 180px;
+}
+
+/* Drop the share links in the space to the right.
+   Doing it like this means it's easier for the author bio
+   to be flexible at smaller screen sizes while the share
+   links remain at a fixed width the whole time */
+.post-footer .share {
+    position: absolute;
+    top: 4rem;
+    right: 0;
+    width: 140px;
+}
+
+.post-footer .share a {
+    font-size: 1.8rem;
+    display: inline-block;
+    margin: 1.4rem 1.6rem 1.6rem 0;
+    color: #BBC7CC;
+    text-decoration: none;
+}
+
+.post-footer .share a:hover {
+    color: #50585D;
+}
+
+
+/* ==========================================================================
+   6. Third Party Elements - Embeds from other services
+   ========================================================================== */
+
+/* Hexo: Youtube, other video container */
+
+.video-container {
+  position: relative;
+  padding-top: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin-top: 0;
+}
+
+/* Hexo: Syntax Highlighter */
+
+figure.highlight {
+    background:#fff;
+    border-radius:0.3em;
+    border:1px solid #e1e1e1;
+    line-height:1.45em;
+    font-size:.9em;
+    margin-bottom:2.1em;
+    color:#222;
+    overflow:auto;
+    white-space:pre;
+    word-wrap:normal;
+}
+figure.highlight figcaption {
+    padding: 7px 10px;
+    font-size: .8em;
+}
+figure.highlight table {
+    margin: 0;
+}
+figure.highlight table > tbody > tr > td {
+    padding: 0;
+    background: #fff !important;
+}
+figure.highlight table > tbody > tr > td.gutter {
+    max-width: 40px;
+    text-align: right;
+}
+figure.highlight pre {
+    border: none;
+    margin: 0;
+}
+
+/* Theme: Solarized - Github
+ * More theme here: http://softwaremaniacs.org/media/soft/highlight/test.html
+ */
+pre .comment,
+pre .template_comment,
+.diff pre .header,
+pre .javadoc {
+  color: #998;
+  font-style: italic
+}
+
+pre .keyword,
+.css .rule pre .keyword,
+pre .winutils,
+.javascript pre .title,
+.nginx pre .title,
+pre .subst,
+pre .request,
+pre .status {
+  color: #333;
+  font-weight: bold
+}
+
+pre .number,
+pre .hexcolor,
+.ruby pre .constant {
+  color: #099;
+}
+
+pre .string,
+pre .tag pre .value,
+pre .phpdoc,
+.tex pre .formula {
+  color: #d14
+}
+
+pre .title,
+pre .id,
+.coffeescript pre .params,
+.scss pre .preprocessor {
+  color: #900;
+  font-weight: bold
+}
+
+.javascript pre .title,
+.lisp pre .title,
+.clojure pre .title,
+pre .subst {
+  font-weight: normal
+}
+
+pre .class pre .title,
+.haskell pre .type,
+.vhdl pre .literal,
+.tex pre .command {
+  color: #458;
+  font-weight: bold
+}
+
+pre .tag,
+pre .tag pre .title,
+pre .rules pre .property,
+.django pre .tag pre .keyword {
+  color: #000080;
+  font-weight: normal
+}
+
+pre .attribute,
+pre .variable,
+.lisp pre .body {
+  color: #008080
+}
+
+pre .regexp {
+  color: #009926
+}
+
+pre .symbol,
+.ruby pre .symbol pre .string,
+.lisp pre .keyword,
+.tex pre .special,
+pre .prompt {
+  color: #990073
+}
+
+pre .built_in,
+.lisp pre .title,
+.clojure pre .built_in {
+  color: #0086b3
+}
+
+pre .preprocessor,
+pre .pragma,
+pre .pi,
+pre .doctype,
+pre .shebang,
+pre .cdata {
+  color: #999;
+  font-weight: bold
+}
+
+pre .deletion {
+  background: #fdd
+}
+
+pre .addition {
+  background: #dfd
+}
+
+.diff pre .change {
+  background: #0086b3
+}
+
+pre .chunk {
+  color: #aaa
+}
+
+
+/* Github */
+
+.gist table {
+    margin: 0;
+    font-size: 1.4rem;
+}
+
+.gist .line-number {
+    min-width: 25px;
+    font-size: 1.1rem;
+}
+
+
+/* ==========================================================================
+   7. Pagination - Tools to let you flick between pages
+   ========================================================================== */
+
+/* The main wrapper for our pagination links */
+.pagination {
+    position: relative;
+    width: 80%;
+    max-width: 700px;
+    margin: 4rem auto;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.3rem;
+    color: #9EABB3;
+    text-align: center;
+}
+
+.pagination a {
+    color: #9EABB3;
+}
+
+/* Push the previous/next links out to the left/right */
+.older-posts,
+.newer-posts {
+    position: absolute;
+    display: inline-block;
+    padding: 0 15px;
+    border: #EBF2F6 2px solid;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: border ease 0.3s;
+}
+
+.older-posts {
+    right: 0;
+}
+
+.page-number {
+    display: inline-block;
+    padding: 2px 0;
+}
+
+.newer-posts {
+    left: 0;
+}
+
+.older-posts:hover,
+.newer-posts:hover {
+    border-color: #9EABB3;
+}
+
+
+/* ==========================================================================
+   8. Footer - The bottom of every page
+   ========================================================================== */
+
+.site-footer {
+    position: relative;
+    margin: 8rem 0 0 0;
+    padding: 4rem 0;
+    border-top: #EBF2F6 1px solid;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.3rem;
+    line-height: 1.7em;
+    color: #BBC7CC;
+    text-align: center;
+    background: #F7FAFB;
+}
+
+.site-footer a {
+    color: #BBC7CC;
+    text-decoration: underline;
+}
+
+.site-footer a:hover {
+    color: #50585D;
+}
+
+.poweredby .icon-ghost {
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.poweredby .icon-ghost:hover {
+    text-decoration: none;
+}
+
+.poweredby .icon-ghost:before {
+    font-size: 1rem;
+    margin-right: 0.2em;
+}
+
+/* The subscribe icon on the footer */
+.subscribe {
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    margin-left: -15px;
+    border: #EBF2F6 1px solid;
+    text-align: center;
+    line-height: 2.4rem;
+    border-radius: 50px;
+    background: #fff;
+    transition: box-shadow 0.5s;
+}
+
+/* The RSS icon, inserted via icon font */
+.subscribe:before {
+    color: #D2DEE3;
+    font-size: 10px;
+    position: absolute;
+    top: 9px;
+    left: 9px;
+    font-weight: bold;
+    transition: color 0.5s ease;
+}
+
+/* Add a box shadow to on hover */
+.subscribe:hover {
+    box-shadow: rgba(0,0,0,0.05) 0 0 0 3px;
+    transition: box-shadow 0.25s;
+}
+
+.subscribe:hover:before {
+    color: #50585D;
+}
+
+/* CSS tooltip saying "Subscribe!" - initially hidden */
+.tooltip {
+    opacity:0;
+    display: inline-block;
+    padding: 4px 8px 5px 8px;
+    position:absolute;
+    top: -23px;
+    left: -21px;
+    color: rgba(255,255,255,0.9);
+    font-size: 1.1rem;
+    line-height: 1em;
+    text-align: center;
+    background: #50585D;
+    border-radius:20px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    transition: opacity 0.3s ease, top 0.3s ease;
+}
+
+/* The little chiclet arrow under the tooltip, pointing down */
+.tooltip:after {
+    content:"";
+    border-width:5px 5px 0 5px;
+    border-style:solid;
+    border-color: #50585D transparent;
+    display:block;
+    position:absolute;
+    bottom:-4px;
+    left:50%;
+    margin-left:-5px;
+    z-index: 220;
+    width:0;
+}
+
+/* On hover, show the tooltip! */
+.subscribe:hover .tooltip {
+    opacity: 1;
+    top: -33px;
+}

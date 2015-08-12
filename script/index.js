@@ -19,4 +19,7 @@ $(function(){
     }
   });
 
+  /* DeSVG the page */
+  deSVG('.de-svg', true);
+
 });
