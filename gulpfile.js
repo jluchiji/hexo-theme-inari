@@ -26,7 +26,7 @@ gulp.task('scripts', function() {
   var files = (config.scripts || []).map(function(i) {
     return path.join('node_modules', i);
   }).concat('script/**/*.js');
-  
+
   gulp.src(files)
     .pipe(sourcemap.init())
     .pipe(concat('bundle.js'))
@@ -46,5 +46,13 @@ gulp.task('styles', function() {
     .pipe(cssmin())
     .pipe(sourcemap.write('./'))
     .pipe(gulp.dest('source/css'));
+
+});
+
+/* Auto-rebuild */
+gulp.task('watch', function() {
+
+  gulp.watch(['script/**/*.js'], ['scripts']);
+  gulp.watch(['style/**/*.less'], ['styles']);
 
 });

@@ -15,11 +15,21 @@ $(function(){
       down: 40
     },
     classes: {
+      top: 'top',
       notTop: 'scroll'
     }
   });
 
   /* DeSVG the page */
   deSVG('.de-svg', true);
+
+  /* Popup Menu */
+  $('#navbar-menu-trigger').click(function(e) {
+    e.stopImmediatePropagation();
+    $('#navbar-menu').toggleClass('open');
+  });
+  $(document.body).click(function() {
+    $('#navbar-menu').removeClass('open');
+  });
 
 });
