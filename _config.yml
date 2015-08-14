@@ -9,6 +9,5 @@ excerpt_link: Read More
 # Scripts to include
 scripts:
   - jquery/dist/jquery.min.js
-  - enquire.js/dist/enquire.min.js
   - headroom.js/dist/headroom.min.js
   - headroom.js/dist/jQuery.headroom.min.js
