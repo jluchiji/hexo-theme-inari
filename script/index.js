@@ -16,7 +16,9 @@ $(function(){
     },
     classes: {
       top: 'top',
-      notTop: 'scroll'
+      notTop: 'scroll',
+      pinned: '',
+      unpinned: 'compact'
     }
   });
 

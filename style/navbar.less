@@ -132,7 +132,7 @@ nav#navbar {
   @media (min-width: 768px) {
     .logo-size(92px; 15px);
 
-    transition: height 0.3s ease;
+    transition: height 0.3s ease, background 0.3s ease, transform 0.3s ease;
 
     & li a {
       display: block;
@@ -145,6 +145,10 @@ nav#navbar {
     }
 
     &.scroll { .logo-size(48px; 10px); }
+    &.compact {
+      transform: translateY(-100%) translateY(5px);
+      background: #ED2939;
+    }
     #main-logo { .abs-center-x(); }
   }
   /*!
@@ -152,7 +156,8 @@ nav#navbar {
    */
   @media (min-width: 900px) {
     .logo-size(128px, 15px);
-    &.scroll { .logo-size(64px; 10px); }
+    &.scroll  { .logo-size(64px; 5px); }
+    &.compact { .logo-size(48spx; 5px); }
   }
 
 }
