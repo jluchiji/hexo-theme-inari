@@ -84,7 +84,7 @@ ul#navbar-menu {
  * Base styles
  */
 nav#navbar {
-  .logo-size(48px; 5px);
+  .logo-size(64px; 5px);
 
   position: fixed;
   z-index: 999;
@@ -93,6 +93,7 @@ nav#navbar {
   width: 100%;
 
   border-radius: 1px;
+  transition: height 0.3s ease, border 0.3s ease, transform 0.3s ease;
   background: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0) 100%);
   -webkit-backdrop-filter: blur(3px);
 
@@ -123,7 +124,13 @@ nav#navbar {
     #main-logo svg path { fill: #ED2939; }
   }
   &.scroll {
+    .logo-size(48px; 5px);
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
+  }
+
+  &.compact {
+    transform: translateY(-100%) translateY(3px);
+    border-bottom: 3px solid #ED2939;
   }
 
   /*!
@@ -131,8 +138,6 @@ nav#navbar {
    */
   @media (min-width: 768px) {
     .logo-size(92px; 15px);
-
-    transition: height 0.3s ease, background 0.3s ease, transform 0.3s ease;
 
     & li a {
       display: block;
@@ -145,10 +150,6 @@ nav#navbar {
     }
 
     &.scroll { .logo-size(48px; 10px); }
-    &.compact {
-      transform: translateY(-100%) translateY(5px);
-      background: #ED2939;
-    }
     #main-logo { .abs-center-x(); }
   }
   /*!
@@ -157,7 +158,6 @@ nav#navbar {
   @media (min-width: 900px) {
     .logo-size(128px, 15px);
     &.scroll  { .logo-size(64px; 5px); }
-    &.compact { .logo-size(48spx; 5px); }
   }
 
 }
