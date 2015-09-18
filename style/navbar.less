@@ -93,7 +93,7 @@ nav#navbar {
   width: 100%;
 
   border-radius: 1px;
-  transition: height 0.3s ease, border 0.3s ease, transform 0.3s ease;
+  transition: all 0.3s ease;
   background: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0) 100%);
   -webkit-backdrop-filter: blur(3px);
 
@@ -108,6 +108,11 @@ nav#navbar {
   }
 
   & { color: #FFFFFF; }
+
+  & li a {
+    cursor: pointer;
+    text-decoration: none;
+  }
 
   &.scroll,
   .post-template > &{
@@ -129,8 +134,7 @@ nav#navbar {
   }
 
   &.compact {
-    transform: translateY(-100%) translateY(3px);
-    border-bottom: 3px solid #ED2939;
+    transform: translateY(-100%);
   }
 
   /*!
